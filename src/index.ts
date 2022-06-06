@@ -1,7 +1,6 @@
 import { ApolloServer, gql } from 'apollo-server';
 
 // 1 - Query
-
 const typeDefs = gql`
 
     type Query {
@@ -10,7 +9,6 @@ const typeDefs = gql`
 `;
 
 // 2 - Resolvers
-
 const resolvers = {
     Query: {
         info: () => 'Hello world'
@@ -18,7 +16,6 @@ const resolvers = {
 };
 
 // 3- Server
-
 const server = new ApolloServer({
     typeDefs,
     resolvers
